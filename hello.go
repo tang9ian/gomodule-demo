@@ -1,10 +1,7 @@
-package main
+package hello
 
-import "fmt"
+const greetingPrefix = "Hello, "
 
-func hello() string {
-	return "vim-go"
-}
-func main() {
-	fmt.Println(hello())
+func Hello(name string) string {
+	return greetingPrefix + name
 }
