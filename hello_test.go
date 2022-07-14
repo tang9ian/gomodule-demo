@@ -1,13 +1,9 @@
 package main
 
-import (
-	"testing"
-	hello "github.com/tang9ian/gomodule-demo"
-)
+import "testing"
 
 func TestHello(t *testing.T) {
-	name := "vim-go!"
-	got := hello.Hello(name)
+	got := Hello()
 	want := "Hello, vim-go!"
 
 	if got != want {
